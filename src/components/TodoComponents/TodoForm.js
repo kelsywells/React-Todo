@@ -7,12 +7,16 @@ import TodoList from './TodoList'
 
 function TodoForm(props) {
     return (
-    <form onSubmit={props.handle}>
-        <input type="text" name="task" placeholder="Enter Task..." />
-        <button>Add To-do</button>
+    <form /*onSubmit={props.handle}*/>
+        <input type="text" name="todo" placeholder="...todo" />
+        <button>Add Todo</button>
         <button>Clear Completed</button>
     </form>
     );
 }
 
+// function handleChangeFunction(event) {
+//     this.setState({task: event.target.value});
+// }
+//     <input onChange={this.handleChangeFunction} />
 export default TodoForm; 

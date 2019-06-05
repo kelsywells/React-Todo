@@ -10,14 +10,10 @@ class App extends React.Component {
   render() {
     this.state= {task: ""}
 
-    function handleChangeFunction(event) {
-      this.setState({task: event.target.value});
-    }
-
     return (
       <div>
         <h1>Todo List: MVP</h1>
-        <input onChange={this.handleChangeFunction} />
+    
         <TodoForm />
         <TodoList />
         <Todo />
