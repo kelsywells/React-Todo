@@ -6,18 +6,19 @@
 
 
 import React from 'react'
+import Todo from './Todo'
   
-const TodoList = [
-  {
-    task: 'Organize Garage',
-    id: 1528817077286,
-    completed: false
-  },
-  {
-    task: 'Bake Cookies',
-    id: 1528817084358,
-    completed: false
-  }
-];
+const TodoList = props => {
 
-export default TodoList;
+    console.log("props", props);
+
+    return (
+        <ul> {
+            props.todos.map((todo, index) =>
+            }
+    </ul>
+        </div>
+    )
+}
+
+ export default TodoList;
