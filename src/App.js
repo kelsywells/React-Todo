@@ -12,6 +12,7 @@ class App extends React.Component {
     this.state= {
       task: "",
       toDoList: [
+        //todos
         {
           task: 'Organize Garage',
           id: 1528817077286,
@@ -25,6 +26,18 @@ class App extends React.Component {
       ]
     }
   }
+
+  addItem = newItem => {
+    const newTask = {
+      name: newTask,
+      id: Date.now(),
+      completed: false
+    };
+
+    this.setState({
+      currentTasks: [...this.state.todos, newTask]
+    });
+  };
 
   render() {
   

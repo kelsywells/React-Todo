@@ -13,12 +13,17 @@ const TodoList = props => {
     console.log("props", props);
 
     return (
-        <ul> {
-            props.todos.map((todo, index) =>
-            }
-    </ul>
-        </div>
-    )
+       <div className="task-list">
+           {props.todos.map(todo => {
+               return {
+                   <Todo
+                        task={todo}
+                        toggleTask={props.toggleTask}
+                        key={task.id}
+                    />
+               }
+           })}
+    )   </div>
 }
 
  export default TodoList;
